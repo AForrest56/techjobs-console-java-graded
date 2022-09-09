@@ -128,15 +128,16 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if( someJobs.size() >= 1){
             for(HashMap<String, String> i : someJobs){
-                System.out.println("*****\n" +
-                        "position type: " + i.get("position type") +
+                System.out.println("\n*****" +
+                        "\nposition type: " + i.get("position type") +
                         "\nname: " + i.get("name") +
                         "\nemployer: " + i.get("employer") +
                         "\nlocation: " + i.get("location") +
                         "\ncore competency: " + i.get("core competency") +
-                        "\n*****\n");
+                        "\n*****");
             }
-        }else { System.out.println("No Results");
+        }else {
+            System.out.println("No Results");
         }
 
     }
