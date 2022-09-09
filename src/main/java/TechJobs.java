@@ -131,8 +131,8 @@ public class TechJobs {
                 System.out.println("*****\n\n");
                 i.forEach( (key, value) -> System.out.println(key + ": " + value));
                 System.out.println("*****");
-            }else { System.out.println("No Results");
             }
+        }else { System.out.println("No Results");
         }
 
     }
