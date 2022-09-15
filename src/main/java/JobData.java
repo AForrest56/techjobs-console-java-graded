@@ -100,17 +100,18 @@ public class JobData {
 
         // TODO - implement this method
 
-        ArrayList<HashMap<String, String>> Results = new ArrayList<>();
+        ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
-        for(HashMap<String, String> i : allJobs){
+       for(HashMap<String, String> i : allJobs){
             i.forEach( (key, val) -> {
                 if(val.toLowerCase().contains(value.toLowerCase())) {
-                    Results.add(i);
+                    jobs.add(i);
                 }
             });
-        }
-        return Results;
+       }
+        return jobs;
     }
+
 
     /**
      * Read in data from a CSV file and store it in a list
